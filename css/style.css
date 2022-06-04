@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	/*font-size: 62.5%;*/
+	font-size: 100%;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+=========================
+=========================
+Layout
+=========================
+========================= 
+*/
+
+/* h1 {
+	font-size: 3rem;
+} */
+
+
+nav {
+	background-color: yellow;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	line-height: 50px;
+}
+
+li {
+	font-size: .9rem;
+}
+
+.banner {
+	background: linear-gradient(#3a3a3a, #1e1e1e);
+	background-size: cover;
+	color: white;
+	margin-top: 50px;
+	padding-top: 70px;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 4rem;
+	font-family: 'Shrikhand', cursive;
+	text-shadow: 5px 5px 0 rgb(0, 0, 0);
+}
+
+p {
+	margin: 1%;
+}
+
+.form {
+	margin: 5% auto;
+	width: 50%;
+	position: relative;
+}
+
+.form > * {
+	outline: 0;
+	appearance: none;
+	padding: 0;
+	margin: 1%;
+	border: 1px solid black;
+	height: 35px;
+	box-shadow: 5px 5px 0 black;
+}
+
+.form input {
+	width: 73%;
+	padding: 2%;
+}
+
+.form button {
+	width: 23%;
+	background-color: yellow;
+}
+
+button:active {
+	background: rgb(210, 210, 6);
+}
+
+img {
+	max-height: 35vh;
+}
+
+.recCardsHolder{
+	display: flex;
+	flex-direction: column;
+}
+
+.hide {
+	display: none;
+}
+
+h3 {
+	font-size: 1.5rem;
+	width: 70%;
+	margin: 3% auto 2% auto;
+	font-family: 'Shrikhand', cursive;
+	color: yellow;
+	text-shadow: 2px 2px 0 rgb(70, 70, 70);
+}
+
+span {
+	display: inline-block;
+}
+
